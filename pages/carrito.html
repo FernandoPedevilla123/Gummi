@@ -8,13 +8,23 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
-</head>
+    <link 
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+   </head>
 
-<header> 
-   <div class="logogummi">
-      <img src="../assets/logo_gummi.JPG">
-      <div id="header">
-         <ul class="nav">
+<body> 
+
+   <div class="contenedor_index">
+ 
+      <section class="logogummi">
+         <a href="../index.html"><img src="../assets/logo_gummi.JPG" title="home"></a>
+        </section>
+
+      <header class="nav">
+         
+         <ul>
              <li><a href="#destacados">DESTACADOS</a></li>
              <li><a href="">WOMEN</a>
              <ul>
@@ -50,30 +60,22 @@
                   </ul>
                </li>
          </ul>
-      </div>
-   </div>
+         
 
-   <main class="flexcaja">
-      <div class="box">
-           <span class="icon"><i class="fa fa-search"></i></span>
-           <input type="search" id="search" placeholder="Search..." />
-           <a href="login.html"><img src="../assets/login.JPG" alt="" title="login"></a>
-           <a href="carrito.html"><img src="../assets/carrito.JPG" alt="" title="carrito"></a>
-      </div>
-   </main>
+         <section class="flexcaja">
+            <div class="box">
+                 <span class="icon"><i class="fa fa-search"></i></span>
+                 <input type="search" id="search" placeholder="Search..." size="10px"/>
+                 <a href="login.html"><img src="../assets/login.JPG" alt="" title="login"></a>
+                 <a href="carrito.html"><img src="../assets/carrito.JPG" alt="" title="carrito"></a>
+            </div>
+         </section> 
+      </header>
    
-<header/>
-
-
-<body> <!--aca va todo el contenido de la pagina que1q{0} se debe visualizar-->
-
-   <FIeldset class="fieldsetmen">
-      <label>CONTACTO</label>
-   </FIeldset>
-   
- <h1 class="carrito">Su carrito esta vacio</h1>
+ <!--h1 class="carrito">Su carrito esta vacio</h1>*/-->
     
-    <table class="ayuda">
+ <section class="piepagina">
+   <table class="ayuda">
      <td><h3>Ayuda</h3></td>
        <tr>
           <td>
@@ -97,29 +99,28 @@
           </td>
        </tr>
     </table>
+ </section>
 
-   <section class="piepagina">
-    <div class="iconosfi">
-          <a title="facebook" href="https://www.facebook.com/gummishoes"target="_blank"><img src="../assets/facebook.JPG" alt="facebook" /></a>
-          <a title="instagram" href="https://www.instagram.com/gummibrand/?hl=es" target="_blank"><img src="../assets/instagram.JPG" alt="instagram" /></a>
-         <FIeldset class="suscripcion">
-               <b><label class="suscripcion__boton--label" for="correo">SUSCRIBETE AL NEWS</label></b>
-               <input class="suscripcion__boton--mail" type="email" name="correo" title="e-mail">
-               <input class="boton" type="submit" value="SUSCRIBIRME" style='width:135px; height:32px'>
-         </FIeldset>
-    </div>
-     
-      <table class="logoiba">
-        <th>
-           <img src="../assets/logo_iba.JPG" alt="">
-        </th>
-      </table>
-   </section>
+ <div class="iconosfi">
+   <a title="facebook" href="https://www.facebook.com/gummishoes"target="_blank"><img src="../assets/facebook.JPG" alt="facebook" /></a>
+   <a title="instagram" href="https://www.instagram.com/gummibrand/?hl=es" target="_blank"><img src="../assets/instagram.JPG" alt="instagram" /></a>
+  <FIeldset class="suscripcion">
+        <b><label class="suscripcion__boton--label" for="correo">SUSCRIBETE AL NEWS</label></b>
+        <input class="suscripcion__boton--mail" type="email" name="correo" title="e-mail">
+        <input class="boton" type="submit" value="SUSCRIBIRME" style='width:135px; height:32px'>
+  </FIeldset>
+ </div>
 
-</body>
+<table class="logoiba">
+ <th>
+    <img src="../assets/logo_iba.JPG" class="animation">
+ </th>
+</table>
 
 <footer class="footer">  
- <h5>gummi - iBA Shop - Powered by easycommerce</h5>
+<h5>gummi - iBA Shop - Powered by easycommerce</h5>
 </footer>
-    
+
+</div>
+</body>
 </html>

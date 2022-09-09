@@ -1,87 +1,357 @@
-/*login.html versión iPhone X*/
-@media screen and  (max-width: 500px)
+/*envios versión Laptop*/
+@media screen and  (max-width: 1280px)
 {
-.contenedor_login {
-    background-color: white;
-    grid-template-columns: 400px;
-    grid-template-rows: 70px 150px 100px 360px 100px 130px 20px;
+.contenedor_envios {
+    display: grid;
+    justify-content: space-between;
+    grid-column-gap: 60px;
+    grid-template-columns: 120px 400px 200px;
+    grid-template-rows: 70px 700px 150px 30px;
     grid-template-areas: 
-    "header"
-    "main"
-    "main"
-    "main"
-    "logo"
-    "ayuda"
-    "footer";
+    "logo menu iconos"
+    "formulario formulario formulario"
+    "tabla fi iba"
+    "footer footer footer";
      }
 
-.logogummi_login {
-    grid-area: header;
-    background-color: white;
+.logogummi_envios {
+    grid-area: logo;
+    margin-top: 13px;
+}
+
+.nav_envios {
+    grid-area: menu;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+    align-self:unset;
+          
+}
+
+.box_envios {
+    grid-area: iconos;
     position: fixed;
+    top:20px;
+    right: 10px;
 }
 
-.box_login {
-    grid-area: header;
-    background-color: white;
+.preguntas {
+    grid-area: formulario;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+    justify-self: left;
+  }
 
-}
+.cajaoverflow {
+    grid-area: formulario;
+    color: darkgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    text-align: left;
+    width: 400px;
+    position: relative;
+    justify-self: center;
 
-.nav_login {
-    grid-area: main;
-    height: 80px;
-    background-color: white
  }
 
-.login {
-    grid-area: main;
-    padding-top: 180px;
-    background-color: white;
-  }
+ .preguntas__frecuentes--modificar {
+    text-align: left;
+ }
 
-.datospersonales {
-    grid-area: main;
-    padding-top: 600px;
+.piepagina_envios {
+    grid-area: tabla;
+    align-items: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    font-size: small;
+    display:inline-block;
+    align-self:stretch;
+}
+
+.iconosfi_envios {
+    grid-area: fi;
+    justify-self: right;
+}
+
+.suscripcion_envios {
+    display:inline-block;
+ }
+
+.suscripcion__boton--label {
+    color: grey;
+    font-size: medium;
+ }
+
+ .suscripcion__boton--mail {
+    border-bottom: black;
+    border-bottom:solid 5px;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+ }
+
+.logoiba_envios {
+    grid-area: iba;
     justify-self: left;
-    background-color: white;
-  }
+}
+
+.footer_envios {
+    grid-area: footer;
+    justify-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 ul, ol {
     list-style:none;
-    display:inline;
+    display: inline-flex;
  }
  
-.logoiba_login {
+ .nav_envios > li {
+    float:left;
+   }
+ 
+ .nav_envios li a {
+    background-color: white;
+    color: black;
+    text-decoration:none;
+    padding:10px 12px;
+    display: block;
+ }
+ 
+ .nav_envios li a:hover {
+    background-color:#eecd60;
+ }
+ 
+ .nav_envios li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+ }
+ 
+ .nav_envios li:hover > ul {
+    display:block;
+ }
+ 
+ .nav_envios li ul li {
+    position:relative;
+ }
+ 
+ .nav_envios li ul li ul {
+    right:-140px;
+    top:0px;
+ }
+
+ .fieldset_envios {
+    color: grey;
+    width: 100px;
+    height: 50px;
+    border-style:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+
+.fieldsetmen_envios {
+    color: black;
+    background-color: #eecd60;
+    width: 1500px;
+    height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+.inputmen_envios {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+.boton {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+
+}/*envios versión Laptop*/
+@media screen and  (max-width: 1280px)
+{
+.contenedor_envios {
+    display: grid;
+    justify-content: space-between;
+    grid-column-gap: 60px;
+    grid-template-columns: 120px 400px 200px;
+    grid-template-rows: 70px 700px 150px 30px;
+    grid-template-areas: 
+    "logo menu iconos"
+    "formulario formulario formulario"
+    "tabla fi iba"
+    "footer footer footer";
+     }
+
+.logogummi_envios {
     grid-area: logo;
-    background-color: white;
+    margin-top: 13px;
 }
 
-.footer_login {
-    grid-area: footer;
-    background-color: white;
+.nav_envios {
+    grid-area: menu;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+    align-self:unset;
+          
+}
+
+.box_envios {
+    grid-area: iconos;
+    position: fixed;
+    top:20px;
+    right: 10px;
+}
+
+.preguntas {
+    grid-area: formulario;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+    justify-self: left;
+  }
+
+.cajaoverflow {
+    grid-area: formulario;
+    color: darkgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    text-align: left;
+    width: 400px;
+    position: relative;
     justify-self: center;
-}
-
-.piepagina_login {
-    grid-area: ayuda;
-    background-color: white;
-}
 
  }
 
+ .preguntas__frecuentes--modificar {
+    text-align: left;
+ }
 
-/*login versión iPad*/
+.piepagina_envios {
+    grid-area: tabla;
+    align-items: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    font-size: small;
+    display:inline-block;
+    align-self:stretch;
+}
+
+.iconosfi_envios {
+    grid-area: fi;
+    justify-self: right;
+}
+
+.suscripcion_envios {
+    display:inline-block;
+ }
+
+.suscripcion__boton--label {
+    color: grey;
+    font-size: medium;
+ }
+
+ .suscripcion__boton--mail {
+    border-bottom: black;
+    border-bottom:solid 5px;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+ }
+
+.logoiba_envios {
+    grid-area: iba;
+    justify-self: left;
+}
+
+.footer_envios {
+    grid-area: footer;
+    justify-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul, ol {
+    list-style:none;
+    display: inline-flex;
+ }
+ 
+ .nav_envios > li {
+    float:left;
+   }
+ 
+ .nav_envios li a {
+    background-color: white;
+    color: black;
+    text-decoration:none;
+    padding:10px 12px;
+    display: block;
+ }
+ 
+ .nav_envios li a:hover {
+    background-color:#eecd60;
+ }
+ 
+ .nav_envios li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+ }
+ 
+ .nav_envios li:hover > ul {
+    display:block;
+ }
+ 
+ .nav_envios li ul li {
+    position:relative;
+ }
+ 
+ .nav_envios li ul li ul {
+    right:-140px;
+    top:0px;
+ }
+
+ .fieldset_envios {
+    color: grey;
+    width: 100px;
+    height: 50px;
+    border-style:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
 
 
-@media screen and  (max-width: 1024px)
+.fieldsetmen_envios {
+    color: black;
+    background-color: #eecd60;
+    width: 1500px;
+    height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+.inputmen_envios {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+.boton {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+
+/*login.html versión Laptop*/
+
+@media screen and  (max-width: 1280px)
 {
 .contenedor_login {
     display: grid;
-    justify-content:left;
-    grid-column-gap: 230px;
-    background-color: coral;
-    grid-template-columns: 0px 400px 200px;
-    grid-template-rows: 70px 700px 150px 30px;
+    justify-content:space-between;
+    justify-items: stretch;
+    grid-template-columns: 120px 400px 200px;
+    grid-template-rows: 70px 450px 150px 30px;
     grid-template-areas: 
     "logo menu iconos"
     "formulario formulario formulario"
@@ -91,13 +361,170 @@ ul, ol {
 
 .logogummi_login {
     grid-area: logo;
-    background-color: #eecd60;
     margin-top: 13px;
 }
 
 .nav_login {
     grid-area: menu;
-    background-color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+    align-self:unset;
+          
+}
+
+.box_login {
+    grid-area: iconos;
+    position: fixed;
+    top:20px;
+    right: 10px;
+}
+
+
+.login {
+    grid-area: formulario;
+}
+
+.datospersonales {
+    grid-area: formulario;
+    justify-self: right;
+    margin-right: 140px;
+}
+
+.piepagina_login {
+    grid-area: tabla;
+    align-items: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    font-size: small;
+    display:inline-block;
+    align-self:stretch;
+}
+
+.iconosfi_login {
+    grid-area: fi;
+    justify-self: right;
+}
+
+.suscripcion_login {
+    display:inline-block;
+ }
+
+.suscripcion__boton--label {
+     font-size: medium;
+ }
+
+ .suscripcion__boton--mail {
+    border-bottom: black;
+    border-bottom:solid 5px;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+ }
+
+.logoiba_login {
+    grid-area: iba;
+    justify-self: left;
+}
+
+.footer_login {
+    grid-area: footer;
+    justify-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul, ol {
+    list-style:none;
+    display: inline-flex;
+ }
+ 
+ .nav_login > li {
+    float:left;
+   }
+ 
+ .nav_login li a {
+    background-color: white;
+    color: black;
+    text-decoration:none;
+    padding:10px 12px;
+    display: block;
+ }
+ 
+ .nav_login li a:hover {
+    background-color:#eecd60;
+ }
+ 
+ .nav_login li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+ }
+ 
+ .nav_login li:hover > ul {
+    display:block;
+ }
+ 
+ .nav_login li ul li {
+    position:relative;
+ }
+ 
+ .nav_login li ul li ul {
+    right:-140px;
+    top:0px;
+ }
+
+ .fieldset_login {
+    width: 100px;
+    height: 50px;
+    border-style:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+
+.fieldsetmen_login {
+    color: black;
+    width: 1500px;
+    height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+.inputmen_login {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+.boton_login {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+
+}
+
+
+}
+/*login versión iPad*/
+@media screen and  (max-width: 1024px)
+{
+.contenedor_login {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 0px 400px 200px;
+    grid-template-rows: 300px 300px 150px 30px;
+    grid-template-areas: 
+    "logo menu iconos"
+    "formulario formulario formulario"
+    "tabla fi iba"
+    "footer footer footer";
+     }
+
+.logogummi_login {
+    grid-area: logo;
+    margin-top: 13px;
+}
+
+.nav_login {
+    grid-area: menu;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: absolute;
     right: 250px;
@@ -105,7 +532,6 @@ ul, ol {
 
 .box_login {
     grid-area: iconos;
-    background-color: chartreuse;
     position: fixed;
     top:20px;
     right: 10px;
@@ -114,31 +540,18 @@ ul, ol {
 .login {
     grid-area: formulario;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:lightpink;
-    padding-top: 20px;
-    justify-self: left;
+    position: absolute;
+    padding-top: 10px;
+    margin-top: 70px;
   }
 
-.datospersonales {
+  .datospersonales {
     grid-area: formulario;
-    color: darkgray;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: hidden;
-    text-align: left;
-    width: 400px;
-    position: relative;
-    background-color: lightblue;
-    justify-self: center;
-
- }
-
- .preguntas__frecuentes--modificar {
-    text-align: left;
- }
+  }
 
 .piepagina_login {
     grid-area: tabla;
-    background-color: olive;
     align-items: right;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: grey;
@@ -148,7 +561,6 @@ ul, ol {
 
 .iconosfi_login {
     grid-area: fi;
-    background-color: darkgrey;
 }
 
 .suscripcion_login {
@@ -170,13 +582,11 @@ ul, ol {
 
 .logoiba_login {
     grid-area: iba;
-    background-color: dodgerblue;
     justify-self: left;
 }
 
 .footer_login {
     grid-area: footer;
-    background-color:fuchsia;
     justify-self: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -226,19 +636,301 @@ ul, ol {
     color: white;
     margin-top: 20px;
 }
+}
+
+/*login.html versión iPhone X*/
+@media screen and  (max-width: 500px)
+{
+.contenedor_login {
+    grid-template-columns: 300px;
+    grid-template-rows: 400px 60px 10px 250px 90px 100px 130px 20px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "main"
+    "formas"
+    "logo"
+    "ayuda"
+    "footer";
+     }
+
+.logogummi_login {
+    grid-area: header;
+    position: fixed;
+}
+
+.box_login {
+    grid-area: header;
+    position: fixed;
+    top:20px;
+    right: 10px;
+}
+
+.nav_login {
+    grid-area: main;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 150px;
+  }
+
+
+.login {
+    grid-area: main;
+    position: absolute;
+    margin-top: 380px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+.datospersonales {
+    grid-area: main;
+    position: absolute;
+    margin-top: 600px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    text-align: left;
+   }
+
+
+.iconosfi_login {
+    grid-area: formas;
+    padding-top: 250px;
+    justify-self: left;
+  }
+
+  .suscripcion_login {
+    display:inline-block;
+ }
+
+.suscripcion__boton--label {
+    color: grey;
+    font-size: medium;
+ }
+
+ .suscripcion__boton--mail {
+    border-bottom: black;
+    border-bottom:solid 5px;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+ }
+
+.logoiba_login {
+    grid-area: iba;
+    justify-self: left;
+}
+
+.footer_login {
+    grid-area: footer;
+    justify-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul, ol {
+    list-style:none;
+    display: inline-flex;
+ }
+ 
+ .nav_login > li {
+    float:left;
+   }
+ 
+ .nav_login li a {
+    background-color: white;
+    color: black;
+    text-decoration:none;
+    padding:10px 12px;
+    display: block;
+ }
+ 
+ .nav_login li a:hover {
+    background-color:#eecd60;
+ }
+ 
+ .nav_login li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+ }
+ 
+ .nav_login li:hover > ul {
+    display:block;
+ }
+ 
+ .nav_login li ul li {
+    position:relative;
+ }
+ 
+ .boton_login {
+    background-color: black;
+}
+ 
+.logoiba_login {
+    grid-area: logo;
+    padding-top: 120px;
+}
+
+.footer_login {
+    grid-area: footer;
+    justify-self: center;
+    padding-top: 180px;
+}
+
+.piepagina_login {
+    grid-area: ayuda;
+    padding-top: 200px;
+}
+
+}
+
+/*marca.html versión iPhone X*/
+@media screen and  (max-width: 500px)
+{
+.contenedor_marca {
+    grid-template-columns: 400px;
+    grid-template-rows: 100px 60px 10px 100px 90px 100px 130px 20px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "main"
+    "formas"
+    "logo"
+    "ayuda"
+    "footer";
+     }
+
+.logogummi_marca {
+    grid-area: header;
+    position: fixed;
+}
+
+.box_marca {
+    grid-area: header;
+    position: fixed;
+    top:20px;
+    right: 10px;
+}
+
+.nav_marca {
+    grid-area: main;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+  }
+
+
+.marcaprincipal {
+    grid-area: main;
+    position: absolute;
+    margin-top: 250px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+
+.marcaprincipal_video {
+    grid-area: main;
+    position: absolute;
+    margin-top: 350px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    text-align: left;
+   }
+
+
+.iconosfi_marca {
+    grid-area: formas;
+    position: absolute;
+    padding-top: 700px;
+  }
+
+  .suscripcion_marca {
+    display:inline-block;
+ }
+
+.suscripcion__boton--label {
+    color: grey;
+    font-size: medium;
+ }
+
+ .suscripcion__boton--mail {
+    border-bottom: black;
+    border-bottom:solid 5px;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+ }
+
+.logoiba_marca{
+    grid-area: iba;
+    justify-self: left;
+    position: absolute;
+    padding-top: 650px;
+}
+
+.footer_marca {
+    grid-area: footer;
+    justify-self: left;
+    position: absolute;
+    padding-top: 970px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul, ol {
+    list-style:none;
+    display: inline-flex;
+ }
+ 
+ .nav_marca > li {
+    float:left;
+   }
+ 
+ .nav_marca li a {
+    background-color: white;
+    color: black;
+    text-decoration:none;
+    padding:10px 12px;
+    display: block;
+ }
+ 
+ .nav_marca li a:hover {
+    background-color:#eecd60;
+ }
+ 
+ .nav_marca li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+ }
+ 
+ .nav_marca li:hover > ul {
+    display:block;
+ }
+ 
+ .nav_marca li ul li {
+    position:relative;
+ }
+ 
+ .boton_marca {
+    background-color: black;
+}
+ 
+.piepagina_marca {
+    grid-area: ayuda;
+    padding-top: 320px;
+}
+
+}
+
+
+/*marca versión iPad*/
 
 }
 
 /*pago versión iPad*/
-
-
 @media screen and  (max-width: 1024px)
 {
 .contenedor_pago {
     display: grid;
     justify-content: space-between;
     grid-column-gap: 60px;
-    background-color: coral;
     grid-template-columns: 120px 400px 200px;
     grid-template-rows: 70px 700px 150px 30px;
     grid-template-areas: 
@@ -250,13 +942,11 @@ ul, ol {
 
 .logogummi_pago {
     grid-area: logo;
-    background-color: #eecd60;
     margin-top: 13px;
 }
 
 .nav_pago {
     grid-area: menu;
-    background-color: blue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     z-index: 1;
     align-self:unset;
@@ -265,7 +955,6 @@ ul, ol {
 
 .box_pago {
     grid-area: iconos;
-    background-color: chartreuse;
     position: fixed;
     top:20px;
     right: 10px;
@@ -274,20 +963,16 @@ ul, ol {
 .preguntas {
     grid-area: formulario;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:lightpink;
     padding-top: 20px;
     justify-self: left;
   }
 
 .cajaoverflow {
     grid-area: formulario;
-    color: darkgray;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow: hidden;
     text-align: left;
     width: 400px;
-    position: relative;
-    background-color: lightblue;
     justify-self: center;
 
  }
@@ -298,7 +983,6 @@ ul, ol {
 
 .piepagina_pago {
     grid-area: tabla;
-    background-color: olive;
     align-items: right;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: grey;
@@ -309,7 +993,6 @@ ul, ol {
 
 .iconosfi_pago {
     grid-area: fi;
-    background-color: darkgrey;
     justify-self: right;
 }
 
@@ -332,13 +1015,11 @@ ul, ol {
 
 .logoiba_pago {
     grid-area: iba;
-    background-color: dodgerblue;
     justify-self: left;
 }
 
 .footer_pago {
     grid-area: footer;
-    background-color:fuchsia;
     justify-self: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -395,7 +1076,175 @@ ul, ol {
 
 .fieldsetmen_pago {
     color: black;
-    background-color: #eecd60;
+    width: 1500px;
+    height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+.inputmen_pago {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+.boton {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+
+}/*pago versión Laptop*/
+@media screen and  (max-width: 1280px)
+{
+.contenedor_pago {
+    display: grid;
+    justify-content: space-between;
+    grid-column-gap: 60px;
+    grid-template-columns: 120px 400px 200px;
+    grid-template-rows: 70px 700px 150px 30px;
+    grid-template-areas: 
+    "logo menu iconos"
+    "formulario formulario formulario"
+    "tabla fi iba"
+    "footer footer footer";
+     }
+
+.logogummi_pago {
+    grid-area: logo;
+    margin-top: 13px;
+}
+
+.nav_pago {
+    grid-area: menu;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+    align-self:unset;
+          
+}
+
+.box_pago {
+    grid-area: iconos;
+    position: fixed;
+    top:20px;
+    right: 10px;
+}
+
+.preguntas {
+    grid-area: formulario;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+    justify-self: left;
+  }
+
+.cajaoverflow {
+    grid-area: formulario;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    text-align: left;
+    width: 400px;
+    justify-self: center;
+
+ }
+
+ .preguntas__frecuentes--modificar {
+    text-align: left;
+ }
+
+.piepagina_pago {
+    grid-area: tabla;
+    align-items: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    font-size: small;
+    display:inline-block;
+    align-self:stretch;
+}
+
+.iconosfi_pago {
+    grid-area: fi;
+    justify-self: right;
+}
+
+.suscripcion_pago {
+    display:inline-block;
+ }
+
+.suscripcion__boton--label {
+    color: grey;
+    font-size: medium;
+ }
+
+ .suscripcion__boton--mail {
+    border-bottom: black;
+    border-bottom:solid 5px;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+ }
+
+.logoiba_pago {
+    grid-area: iba;
+    justify-self: left;
+}
+
+.footer_pago {
+    grid-area: footer;
+    justify-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul, ol {
+    list-style:none;
+    display: inline-flex;
+ }
+ 
+ .nav_pago > li {
+    float:left;
+   }
+ 
+ .nav_pago li a {
+    background-color: white;
+    color: black;
+    text-decoration:none;
+    padding:10px 12px;
+    display: block;
+ }
+ 
+ .nav_pago li a:hover {
+    background-color:#eecd60;
+ }
+ 
+ .nav_pago li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+ }
+ 
+ .nav_pagoli:hover > ul {
+    display:block;
+ }
+ 
+ .nav_pago li ul li {
+    position:relative;
+ }
+ 
+ .nav_pago li ul li ul {
+    right:-140px;
+    top:0px;
+ }
+
+ .fieldset_pago {
+    color: grey;
+    width: 100px;
+    height: 50px;
+    border-style:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+
+.fieldsetmen_pago {
+    color: black;
     width: 1500px;
     height: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -414,16 +1263,15 @@ ul, ol {
 }
 
 }
+
+
 /*envios versión iPad*/
-
-
 @media screen and  (max-width: 1024px)
 {
 .contenedor_envios {
     display: grid;
     justify-content: space-between;
     grid-column-gap: 60px;
-    background-color: coral;
     grid-template-columns: 120px 400px 200px;
     grid-template-rows: 70px 700px 150px 30px;
     grid-template-areas: 
@@ -435,13 +1283,11 @@ ul, ol {
 
 .logogummi_envios {
     grid-area: logo;
-    background-color: #eecd60;
     margin-top: 13px;
 }
 
 .nav_envios {
     grid-area: menu;
-    background-color: blue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     z-index: 1;
     align-self:unset;
@@ -450,7 +1296,6 @@ ul, ol {
 
 .box_envios {
     grid-area: iconos;
-    background-color: chartreuse;
     position: fixed;
     top:20px;
     right: 10px;
@@ -459,7 +1304,6 @@ ul, ol {
 .preguntas {
     grid-area: formulario;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:lightpink;
     padding-top: 20px;
     justify-self: left;
   }
@@ -472,7 +1316,6 @@ ul, ol {
     text-align: left;
     width: 400px;
     position: relative;
-    background-color: lightblue;
     justify-self: center;
 
  }
@@ -483,7 +1326,6 @@ ul, ol {
 
 .piepagina_envios {
     grid-area: tabla;
-    background-color: olive;
     align-items: right;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: grey;
@@ -494,7 +1336,6 @@ ul, ol {
 
 .iconosfi_envios {
     grid-area: fi;
-    background-color: darkgrey;
     justify-self: right;
 }
 
@@ -517,13 +1358,11 @@ ul, ol {
 
 .logoiba_envios {
     grid-area: iba;
-    background-color: dodgerblue;
     justify-self: left;
 }
 
 .footer_envios {
     grid-area: footer;
-    background-color:fuchsia;
     justify-self: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -599,16 +1438,14 @@ ul, ol {
 }
 
 }
-/*preguntasfrecuentes versión iPad*/
 
-
-@media screen and  (max-width: 1024px)
+/*envios versión Laptop*/
+@media screen and  (max-width: 1280px)
 {
-.contenedor_preguntasfrecuentes {
+.contenedor_envios {
     display: grid;
     justify-content: space-between;
     grid-column-gap: 60px;
-    background-color: coral;
     grid-template-columns: 120px 400px 200px;
     grid-template-rows: 70px 700px 150px 30px;
     grid-template-areas: 
@@ -618,24 +1455,21 @@ ul, ol {
     "footer footer footer";
      }
 
-.logogummi_preguntasfrecuentes {
+.logogummi_envios {
     grid-area: logo;
-    background-color: #eecd60;
     margin-top: 13px;
 }
 
-.nav_preguntasfrecuentes {
+.nav_envios {
     grid-area: menu;
-    background-color: blue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     z-index: 1;
     align-self:unset;
           
 }
 
-.box_preguntasfrecuentes {
+.box_envios {
     grid-area: iconos;
-    background-color: chartreuse;
     position: fixed;
     top:20px;
     right: 10px;
@@ -644,7 +1478,6 @@ ul, ol {
 .preguntas {
     grid-area: formulario;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:lightpink;
     padding-top: 20px;
     justify-self: left;
   }
@@ -657,7 +1490,182 @@ ul, ol {
     text-align: left;
     width: 400px;
     position: relative;
-    background-color: lightblue;
+    justify-self: center;
+
+ }
+
+ .preguntas__frecuentes--modificar {
+    text-align: left;
+ }
+
+.piepagina_envios {
+    grid-area: tabla;
+    align-items: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    font-size: small;
+    display:inline-block;
+    align-self:stretch;
+}
+
+.iconosfi_envios {
+    grid-area: fi;
+    justify-self: right;
+}
+
+.suscripcion_envios {
+    display:inline-block;
+ }
+
+.suscripcion__boton--label {
+    color: grey;
+    font-size: medium;
+ }
+
+ .suscripcion__boton--mail {
+    border-bottom: black;
+    border-bottom:solid 5px;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+ }
+
+.logoiba_envios {
+    grid-area: iba;
+    justify-self: left;
+}
+
+.footer_envios {
+    grid-area: footer;
+    justify-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul, ol {
+    list-style:none;
+    display: inline-flex;
+ }
+ 
+ .nav_envios > li {
+    float:left;
+   }
+ 
+ .nav_envios li a {
+    background-color: white;
+    color: black;
+    text-decoration:none;
+    padding:10px 12px;
+    display: block;
+ }
+ 
+ .nav_envios li a:hover {
+    background-color:#eecd60;
+ }
+ 
+ .nav_envios li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+ }
+ 
+ .nav_envios li:hover > ul {
+    display:block;
+ }
+ 
+ .nav_envios li ul li {
+    position:relative;
+ }
+ 
+ .nav_envios li ul li ul {
+    right:-140px;
+    top:0px;
+ }
+
+ .fieldset_envios {
+    color: grey;
+    width: 100px;
+    height: 50px;
+    border-style:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+
+.fieldsetmen_envios {
+    color: black;
+    background-color: #eecd60;
+    width: 1500px;
+    height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+.inputmen_envios {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+.boton {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+
+}
+
+/*preguntasfrecuentes versión iPad*/
+
+
+@media screen and  (max-width: 1024px)
+{
+.contenedor_preguntasfrecuentes {
+    display: grid;
+    justify-content: space-between;
+    grid-column-gap: 60px;
+    grid-template-columns: 120px 400px 200px;
+    grid-template-rows: 70px 700px 150px 30px;
+    grid-template-areas: 
+    "logo menu iconos"
+    "formulario formulario formulario"
+    "tabla fi iba"
+    "footer footer footer";
+     }
+
+.logogummi_preguntasfrecuentes {
+    grid-area: logo;
+    margin-top: 13px;
+}
+
+.nav_preguntasfrecuentes {
+    grid-area: menu;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+    align-self:unset;
+          
+}
+
+.box_preguntasfrecuentes {
+    grid-area: iconos;
+    position: fixed;
+    top:20px;
+    right: 10px;
+}
+
+.preguntas {
+    grid-area: formulario;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+    justify-self: left;
+  }
+
+.cajaoverflow {
+    grid-area: formulario;
+    color: darkgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    text-align: left;
+    width: 400px;
+    position: relative;
     justify-self: center;
 
  }
@@ -668,7 +1676,6 @@ ul, ol {
 
 .piepagina_preguntasfrecuentes {
     grid-area: tabla;
-    background-color: olive;
     align-items: right;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: grey;
@@ -679,7 +1686,6 @@ ul, ol {
 
 .iconosfi_preguntasfrecuentes {
     grid-area: fi;
-    background-color: darkgrey;
     justify-self: right;
 }
 
@@ -702,13 +1708,189 @@ ul, ol {
 
 .logoiba_preguntasfrecuentes {
     grid-area: iba;
-    background-color: dodgerblue;
+    justify-self: left;
+    padding-top: 200px;
+}
+
+.footer_preguntasfrecuentes {
+    grid-area: footer;
+    justify-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 60px;
+}
+
+ul, ol {
+    list-style:none;
+    display: inline-flex;
+ }
+ 
+ .nav_preguntasfrecuentes > li {
+    float:left;
+   }
+ 
+ .nav_preguntasfrecuentes li a {
+    background-color: white;
+    color: black;
+    text-decoration:none;
+    padding:10px 12px;
+    display: block;
+ }
+ 
+ .nav_preguntasfrecuentes li a:hover {
+    background-color:#eecd60;
+ }
+ 
+ .nav_preguntasfrecuentes li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+ }
+ 
+ .nav_preguntasfrecuentes li:hover > ul {
+    display:block;
+ }
+ 
+ .nav_preguntasfrecuentes li ul li {
+    position:relative;
+ }
+ 
+ .nav_preguntasfrecuentes li ul li ul {
+    right:-140px;
+    top:0px;
+ }
+
+ .fieldset_preguntasfrecuentes {
+    color: grey;
+    width: 100px;
+    height: 50px;
+    border-style:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+
+.fieldsetmen_preguntasfrecuentes {
+    color: black;
+    background-color: #eecd60;
+    width: 1500px;
+    height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+.inputmen_preguntasfrecuentes {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+.boton {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+
+}
+
+/*preguntasfrecuentes versión Laptop*/
+
+
+@media screen and  (max-width: 1280px)
+{
+.contenedor_preguntasfrecuentes {
+    display: grid;
+    justify-content: space-between;
+    grid-column-gap: 60px;
+    grid-template-columns: 120px 400px 200px;
+    grid-template-rows: 70px 700px 150px 30px;
+    grid-template-areas: 
+    "logo menu iconos"
+    "formulario formulario formulario"
+    "tabla fi iba"
+    "footer footer footer";
+     }
+
+.logogummi_preguntasfrecuentes {
+    grid-area: logo;
+    margin-top: 13px;
+}
+
+.nav_preguntasfrecuentes {
+    grid-area: menu;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+    align-self:unset;
+          
+}
+
+.box_preguntasfrecuentes {
+    grid-area: iconos;
+    position: fixed;
+    top:20px;
+    right: 10px;
+}
+
+.preguntas {
+    grid-area: formulario;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+    justify-self: left;
+  }
+
+.cajaoverflow {
+    grid-area: formulario;
+    color: darkgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    text-align: left;
+    width: 400px;
+    position: relative;
+    justify-self: center;
+
+ }
+
+ .preguntas__frecuentes--modificar {
+    text-align: left;
+ }
+
+.piepagina_preguntasfrecuentes {
+    grid-area: tabla;
+    align-items: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    font-size: small;
+    display:inline-block;
+    align-self:stretch;
+}
+
+.iconosfi_preguntasfrecuentes {
+    grid-area: fi;
+    justify-self: right;
+}
+
+.suscripcion_preguntasfrecuentes {
+    display:inline-block;
+ }
+
+.suscripcion__boton--label {
+    color: grey;
+    font-size: medium;
+ }
+
+ .suscripcion__boton--mail {
+    border-bottom: black;
+    border-bottom:solid 5px;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+ }
+
+.logoiba_preguntasfrecuentes {
+    grid-area: iba;
     justify-self: left;
 }
 
 .footer_preguntasfrecuentes {
     grid-area: footer;
-    background-color:fuchsia;
     justify-self: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -794,7 +1976,6 @@ ul, ol {
     display: grid;
     justify-content: space-between;
     grid-column-gap: 60px;
-    background-color: coral;
     grid-template-columns: 120px 400px 200px;
     grid-template-rows: 70px 700px 150px 30px;
     grid-template-areas: 
@@ -806,13 +1987,11 @@ ul, ol {
 
 .logogummi_disponibilidadproductos {
     grid-area: logo;
-    background-color: #eecd60;
     margin-top: 13px;
 }
 
 .nav_disponibilidadproductos {
     grid-area: menu;
-    background-color: blue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     z-index: 1;
     align-self:unset;
@@ -821,7 +2000,6 @@ ul, ol {
 
 .box_disponibilidadproductos {
     grid-area: iconos;
-    background-color: chartreuse;
     position: fixed;
     top:20px;
     right: 10px;
@@ -830,7 +2008,6 @@ ul, ol {
 .preguntas {
     grid-area: formulario;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:lightpink;
     padding-top: 20px;
     justify-self: left;
   }
@@ -843,7 +2020,6 @@ ul, ol {
     text-align: left;
     width: 400px;
     position: relative;
-    background-color: lightblue;
     justify-self: center;
 
  }
@@ -854,7 +2030,6 @@ ul, ol {
 
 .piepagina_disponibilidadproductos {
     grid-area: tabla;
-    background-color: olive;
     align-items: right;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: grey;
@@ -865,7 +2040,6 @@ ul, ol {
 
 .iconosfi_disponibilidadproductos {
     grid-area: fi;
-    background-color: darkgrey;
     justify-self: right;
 }
 
@@ -888,13 +2062,11 @@ ul, ol {
 
 .logoiba_disponibilidadproductos {
     grid-area: iba;
-    background-color: dodgerblue;
     justify-self: left;
 }
 
 .footer_disponibilidadproductos {
     grid-area: footer;
-    background-color:fuchsia;
     justify-self: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -971,7 +2143,181 @@ ul, ol {
 
 }
 
+/*disponibilidadproductos versión Laptop*/
 
+
+@media screen and  (max-width: 1280px)
+{
+.contenedor_disponibilidadproductos {
+    display: grid;
+    justify-content: space-between;
+    grid-column-gap: 60px;
+    grid-template-columns: 120px 400px 200px;
+    grid-template-rows: 70px 700px 150px 30px;
+    grid-template-areas: 
+    "logo menu iconos"
+    "formulario formulario formulario"
+    "tabla fi iba"
+    "footer footer footer";
+     }
+
+.logogummi_disponibilidadproductos {
+    grid-area: logo;
+    margin-top: 13px;
+}
+
+.nav_disponibilidadproductos {
+    grid-area: menu;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+    align-self:unset;
+          
+}
+
+.box_disponibilidadproductos {
+    grid-area: iconos;
+    position: fixed;
+    top:20px;
+    right: 10px;
+}
+
+.preguntas {
+    grid-area: formulario;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+    justify-self: left;
+  }
+
+.cajaoverflow {
+    grid-area: formulario;
+    color: darkgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    text-align: left;
+    width: 400px;
+    position: relative;
+    justify-self: center;
+
+ }
+
+ .preguntas__frecuentes--modificar {
+    text-align: left;
+ }
+
+.piepagina_disponibilidadproductos {
+    grid-area: tabla;
+    align-items: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    font-size: small;
+    display:inline-block;
+    align-self:stretch;
+}
+
+.iconosfi_disponibilidadproductos {
+    grid-area: fi;
+    justify-self: right;
+}
+
+.suscripcion_disponibilidadproductos {
+    display:inline-block;
+ }
+
+.suscripcion__boton--label {
+    color: grey;
+    font-size: medium;
+ }
+
+ .suscripcion__boton--mail {
+    border-bottom: black;
+    border-bottom:solid 5px;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+ }
+
+.logoiba_disponibilidadproductos {
+    grid-area: iba;
+    justify-self: left;
+}
+
+.footer_disponibilidadproductos {
+    grid-area: footer;
+    justify-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul, ol {
+    list-style:none;
+    display: inline-flex;
+ }
+ 
+ .nav_disponibilidadproductos > li {
+    float:left;
+   }
+ 
+ .nav_disponibilidadproductos li a {
+    background-color: white;
+    color: black;
+    text-decoration:none;
+    padding:10px 12px;
+    display: block;
+ }
+ 
+ .nav_disponibilidadproductos li a:hover {
+    background-color:#eecd60;
+ }
+ 
+ .nav_disponibilidadproductos li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+ }
+ 
+ .nav_disponibilidadproductos li:hover > ul {
+    display:block;
+ }
+ 
+ .nav_disponibilidadproductos li ul li {
+    position:relative;
+ }
+ 
+ .nav_disponibilidadproductos li ul li ul {
+    right:-140px;
+    top:0px;
+ }
+
+ .fieldset_disponibilidadproductos {
+    color: grey;
+    width: 100px;
+    height: 50px;
+    border-style:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+
+.fieldsetmen_disponibilidadproductos {
+    color: black;
+    background-color: #eecd60;
+    width: 1500px;
+    height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+.inputmen_disponibilidadproductos {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+.boton {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+
+}
 
 /*contacto.html versión iPad*/
 
@@ -981,7 +2327,6 @@ ul, ol {
     display: grid;
     justify-content:space-between;
     justify-items: stretch;
-    background-color: coral;
     grid-template-columns: 120px 400px 200px;
     grid-template-rows: 70px 450px 150px 30px;
     grid-template-areas: 
@@ -993,13 +2338,11 @@ ul, ol {
 
 .logogummi_contacto {
     grid-area: logo;
-    background-color: #eecd60;
     margin-top: 13px;
 }
 
 .nav_contacto {
     grid-area: menu;
-    background-color: blue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     z-index: 1;
     align-self:unset;
@@ -1008,7 +2351,6 @@ ul, ol {
 
 .box_contacto {
     grid-area: iconos;
-    background-color: chartreuse;
     position: fixed;
     top:20px;
     right: 10px;
@@ -1031,7 +2373,6 @@ ul, ol {
 
 .piepagina_contacto {
     grid-area: tabla;
-    background-color: olive;
     align-items: right;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: grey;
@@ -1042,7 +2383,6 @@ ul, ol {
 
 .iconosfi_contacto {
     grid-area: fi;
-    background-color: darkgrey;
     justify-self: right;
 }
 
@@ -1051,8 +2391,7 @@ ul, ol {
  }
 
 .suscripcion__boton--label {
-    color: grey;
-    font-size: medium;
+     font-size: medium;
  }
 
  .suscripcion__boton--mail {
@@ -1065,13 +2404,11 @@ ul, ol {
 
 .logoiba_contacto {
     grid-area: iba;
-    background-color: dodgerblue;
     justify-self: left;
 }
 
 .footer_contacto {
     grid-area: footer;
-    background-color:fuchsia;
     justify-self: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -1117,7 +2454,6 @@ ul, ol {
  }
 
  .fieldset_contacto {
-    color: grey;
     width: 100px;
     height: 50px;
     border-style:none;
@@ -1128,7 +2464,6 @@ ul, ol {
 
 .fieldsetmen_contacto {
     color: black;
-    background-color: #eecd60;
     width: 1500px;
     height: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1139,7 +2474,6 @@ ul, ol {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: small;
 }
-
 .boton {
     background-color: black;
     color: white;
@@ -1147,6 +2481,494 @@ ul, ol {
 }
 
 }
+
+/*contacto.html versión Laptop*/
+
+@media screen and  (max-width: 1280px)
+{
+.contenedor_contacto {
+    display: grid;
+    justify-content:space-between;
+    justify-items: stretch;
+    grid-template-columns: 120px 400px 200px;
+    grid-template-rows: 70px 450px 150px 30px;
+    grid-template-areas: 
+    "logo menu iconos"
+    "formulario formulario formulario"
+    "tabla fi iba"
+    "footer footer footer";
+     }
+
+.logogummi_contacto {
+    grid-area: logo;
+    margin-top: 13px;
+}
+
+.nav_contacto {
+    grid-area: menu;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+    align-self:unset;
+          
+}
+
+.box_contacto {
+    grid-area: iconos;
+    position: fixed;
+    top:20px;
+    right: 10px;
+}
+
+.flexcaja_contacto {
+    flex-wrap: wrap;
+
+}
+
+.contactogummi {
+    grid-area: formulario;
+}
+
+.contactogummi_formas {
+    grid-area: formulario;
+    justify-self: right;
+    margin-right: 140px;
+}
+
+.piepagina_contacto {
+    grid-area: tabla;
+    align-items: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    font-size: small;
+    display:inline-block;
+    align-self:stretch;
+}
+
+.iconosfi_contacto {
+    grid-area: fi;
+    justify-self: right;
+}
+
+.suscripcion_contacto {
+    display:inline-block;
+ }
+
+.suscripcion__boton--label {
+     font-size: medium;
+ }
+
+ .suscripcion__boton--mail {
+    border-bottom: black;
+    border-bottom:solid 5px;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+ }
+
+.logoiba_contacto {
+    grid-area: iba;
+    justify-self: left;
+}
+
+.footer_contacto {
+    grid-area: footer;
+    justify-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul, ol {
+    list-style:none;
+    display: inline-flex;
+ }
+ 
+ .nav_contacto > li {
+    float:left;
+   }
+ 
+ .nav_contacto li a {
+    background-color: white;
+    color: black;
+    text-decoration:none;
+    padding:10px 12px;
+    display: block;
+ }
+ 
+ .nav_contacto li a:hover {
+    background-color:#eecd60;
+ }
+ 
+ .nav_contacto li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+ }
+ 
+ .nav_contacto li:hover > ul {
+    display:block;
+ }
+ 
+ .nav_contacto li ul li {
+    position:relative;
+ }
+ 
+ .nav_contacto li ul li ul {
+    right:-140px;
+    top:0px;
+ }
+
+ .fieldset_contacto {
+    width: 100px;
+    height: 50px;
+    border-style:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+
+.fieldsetmen_contacto {
+    color: black;
+    width: 1500px;
+    height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+.inputmen_contacto {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+.boton {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+
+}
+
+/*marca.html versión iPad*/
+@media screen and  (max-width: 1024px)
+{
+.contenedor_marca {
+    display: grid;
+    justify-content:space-between;
+    justify-items: stretch;
+    grid-template-columns: 120px 400px 200px;
+    grid-template-rows: 70px 450px 150px 30px;
+    grid-template-areas: 
+    "logo menu iconos"
+    "formulario formulario formulario"
+    "tabla fi iba"
+    "footer footer footer";
+     }
+
+.logogummi_marca {
+    grid-area: logo;
+    margin-top: 13px;
+}
+
+.nav_marca {
+    grid-area: menu;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+    align-self:unset;
+          
+}
+
+.box_marca {
+    grid-area: iconos;
+    position: fixed;
+    top:20px;
+    right: 10px;
+}
+
+.flexcaja_marca {
+    flex-wrap: wrap;
+
+}
+
+.marcaprincipal {
+    grid-area: formulario;
+}
+
+.marcaprincipal_video {
+    grid-area: formulario;
+    justify-self: right;
+    padding-top: 70px;
+    margin-right: 140px;
+}
+
+.piepagina_marca {
+    grid-area: tabla;
+    align-items: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    font-size: small;
+    display:inline-block;
+    align-self:stretch;
+}
+
+.iconosfi_marca {
+    grid-area: fi;
+    justify-self: right;
+}
+
+.suscripcion_marca {
+    display:inline-block;
+ }
+
+.suscripcion__boton--label {
+     font-size: medium;
+ }
+
+ .suscripcion__boton--mail {
+    border-bottom: black;
+    border-bottom:solid 5px;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+ }
+
+.logoiba_marca {
+    grid-area: iba;
+    justify-self: left;
+}
+
+.footer_marca {
+    grid-area: footer;
+    justify-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul, ol {
+    list-style:none;
+    display: inline-flex;
+ }
+ 
+ .nav_marca > li {
+    float:left;
+   }
+ 
+ .nav_marca li a {
+    background-color: white;
+    color: black;
+    text-decoration:none;
+    padding:10px 12px;
+    display: block;
+ }
+ 
+ .nav_marca li a:hover {
+    background-color:#eecd60;
+ }
+ 
+ .nav_marca li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+ }
+ 
+ .nav_marca li:hover > ul {
+    display:block;
+ }
+ 
+ .nav_marca li ul li {
+    position:relative;
+ }
+ 
+ .nav_contacto li ul li ul {
+    right:-140px;
+    top:0px;
+ }
+
+ .fieldset_marca {
+    width: 100px;
+    height: 50px;
+    border-style:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+
+.fieldsetmen_marca {
+    color: black;
+    width: 1500px;
+    height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+.inputmen_marca {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+.boton {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+}
+
+/*marca.html versión Laptop*/
+
+@media screen and  (max-width: 1280px)
+{
+.contenedor_marca {
+    display: grid;
+    justify-content:space-between;
+    justify-items: stretch;
+    grid-template-columns: 120px 400px 200px;
+    grid-template-rows: 70px 450px 150px 30px;
+    grid-template-areas: 
+    "logo menu iconos"
+    "formulario formulario formulario"
+    "tabla fi iba"
+    "footer footer footer";
+     }
+
+.logogummi_marca {
+    grid-area: logo;
+    margin-top: 13px;
+}
+
+.nav_marca {
+    grid-area: menu;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+    align-self:unset;
+          
+}
+
+.box_marca{
+    grid-area: iconos;
+    position: fixed;
+    top:20px;
+    right: 10px;
+}
+
+.flexcaja_marca {
+    flex-wrap: wrap;
+
+}
+
+.marcaprincipal {
+    grid-area: formulario;
+}
+
+.marcaprincipal_video {
+    grid-area: formulario;
+    justify-self: right;
+}
+
+.piepagina_marca {
+    grid-area: tabla;
+    align-items: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    font-size: small;
+    display:inline-block;
+    align-self:stretch;
+}
+
+.iconosfi_marca {
+    grid-area: fi;
+    justify-self: right;
+}
+
+.suscripcion_marca {
+    display:inline-block;
+ }
+
+.suscripcion__boton--label {
+     font-size: medium;
+ }
+
+ .suscripcion__boton--mail {
+    border-bottom: black;
+    border-bottom:solid 5px;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+ }
+
+.logoiba_marca {
+    grid-area: iba;
+    justify-self: left;
+}
+
+.footer_marca {
+    grid-area: footer;
+    justify-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul, ol {
+    list-style:none;
+    display: inline-flex;
+ }
+ 
+ .nav_marca > li {
+    float:left;
+   }
+ 
+ .nav_marca li a {
+    background-color: white;
+    color: black;
+    text-decoration:none;
+    padding:10px 12px;
+    display: block;
+ }
+ 
+ .nav_marca li a:hover {
+    background-color:#eecd60;
+ }
+ 
+ .nav_marca li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+ }
+ 
+ .nav_marca li:hover > ul {
+    display:block;
+ }
+ 
+ .nav_marca li ul li {
+    position:relative;
+ }
+ 
+ .nav_marca li ul li ul {
+    right:-140px;
+    top:0px;
+ }
+
+ .fieldset_marca {
+    width: 100px;
+    height: 50px;
+    border-style:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+
+.fieldsetmen_marca {
+    color: black;
+    width: 1500px;
+    height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+.inputmen_marca {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+.boton_marca {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+
+}
+
 
 /*index.html versión iPad*/
 
@@ -1156,7 +2978,7 @@ ul, ol {
     display: grid;
     justify-content:space-between;
     justify-items: stretch;
-    background-color: coral;
+    background-color: white;
     grid-template-columns: 120px 400px 200px;
     grid-template-rows: 70px 280px 450px 150px 30px;
     grid-template-areas: 
@@ -1169,13 +2991,13 @@ ul, ol {
 
 .logogummi {
     grid-area: logo;
-    background-color: #eecd60;
+    background-color: white;
     margin-top: 13px;
 }
 
 .nav {
     grid-area: menu;
-    background-color: blue;
+    background-color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     z-index: 1;
     align-self:unset;
@@ -1184,7 +3006,7 @@ ul, ol {
 
 .box {
     grid-area: iconos;
-    background-color: chartreuse;
+    background-color: white;
     position: fixed;
     top:20px;
     right: 10px;
@@ -1197,17 +3019,17 @@ ul, ol {
 
 .banner {
     grid-area: promo;
-    background-color: darkgreen;
+    background-color: white;
 }
 
 .slider {
     grid-area: carrusel;
-    background-color:gold;
+    background-color:white;
 }
 
 .piepagina {
     grid-area: tabla;
-    background-color: olive;
+    background-color: white;
     align-items: right;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: grey;
@@ -1218,7 +3040,7 @@ ul, ol {
 
 .iconosfi {
     grid-area: fi;
-    background-color: darkgrey;
+    background-color: white;
     justify-self: right;
 }
 
@@ -1241,13 +3063,13 @@ ul, ol {
 
 .logoiba {
     grid-area: iba;
-    background-color: dodgerblue;
+    background-color: white;
     justify-self: left;
 }
 
 .footer {
     grid-area: footer;
-    background-color:fuchsia;
+    background-color: white;
     justify-self: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -1270,7 +3092,206 @@ ul, ol {
  }
  
  .nav li a:hover {
-    background-color:#eecd60;
+    background-color: white;
+ }
+ 
+ .nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+ }
+ 
+ .nav li:hover > ul {
+    display:block;
+ }
+ 
+ .nav li ul li {
+    position:relative;
+ }
+ 
+ .nav li ul li ul {
+    right:-140px;
+    top:0px;
+ }
+
+ fieldset {
+    color: grey;
+    width: 100px;
+    height: 50px;
+    border-style:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+
+.fieldsetmen {
+    color: black;
+    background-color: #eecd60;
+    width: 1500px;
+    height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+.inputmen {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+.boton {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+
+@keyframes aparecer {
+    0% {opacity: 0%;}
+    50% {opacity: 50%;}
+    100% {opacity: 100%;}    
+ }
+
+ .slider-container {
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+ }
+
+ .aparecer {
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+ }
+
+
+}
+
+/*index.html versión Laptop*/
+
+@media screen and  (max-width: 1280px)
+{
+.contenedor_index {
+    display: grid;
+    justify-content:space-between;
+    justify-items: stretch;
+    background-color: white;
+    grid-template-columns: 120px 400px 200px;
+    grid-template-rows: 70px 280px 450px 150px 30px;
+    grid-template-areas: 
+    "logo menu iconos"
+    "promo promo promo"
+    "carrusel carrusel carrusel"
+    "tabla fi iba"
+    "footer footer footer";
+     }
+
+.logogummi {
+    grid-area: logo;
+    background-color: white;
+    margin-top: 13px;
+}
+
+.nav {
+    grid-area: menu;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+    align-self:unset;
+          
+}
+
+.box {
+    grid-area: iconos;
+    background-color: white;
+    position: fixed;
+    top:20px;
+    right: 10px;
+}
+
+.flexcaja {
+    flex-wrap: wrap;
+
+}
+
+.banner {
+    grid-area: promo;
+        background-color: white;
+}
+
+.slider {
+    grid-area: carrusel;
+    background-color:white;
+}
+
+.piepagina {
+    grid-area: tabla;
+    background-color: white;
+    align-items: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    font-size: small;
+    display:inline-block;
+    align-self:stretch;
+}
+
+.iconosfi {
+    grid-area: fi;
+    background-color: white;
+    justify-self: right;
+}
+
+.suscripcion {
+    display:inline-block;
+ }
+
+.suscripcion__boton--label {
+    color: grey;
+    font-size: medium;
+ }
+
+ .suscripcion__boton--mail {
+    border-bottom: black;
+    border-bottom:solid 5px;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+ }
+
+.logoiba {
+    grid-area: iba;
+    background-color: white;
+    justify-self: left;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: white;
+    justify-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul, ol {
+    list-style:none;
+    display: inline-flex;
+ }
+ 
+ .nav > li {
+    float:left;
+   }
+ 
+ .nav li a {
+    background-color: white;
+    color: black;
+    text-decoration:none;
+    padding:10px 12px;
+    display: block;
+ }
+ 
+ .nav li a:hover {
+    background-color: white;
  }
  
  .nav li ul {
@@ -1351,7 +3372,6 @@ ul, ol {
 @media screen and  (max-width: 500px)
 {
 .contenedor_preguntasfrecuentes {
-    background-color: white;
     grid-template-columns: 300px;
     grid-template-rows: 70px 150px 150px 170px 350px 90px 90px 130px 20px;
     grid-template-areas: 
@@ -1368,25 +3388,20 @@ ul, ol {
 
 .logogummi_preguntasfrecuentes {
     grid-area: header;
-    background-color: white;
     position: fixed;
 }
 
 .box_preguntasfrecuentes {
     grid-area: header;
-    background-color: white;
-
 }
 
 .nav_preguntasfrecuentes {
     grid-area: main;
     height: 80px;
-    background-color: white;
  }
 
 .preguntas {
     grid-area: main;
-    background-color:white;
     position:relative;
     align-self: center;
     bottom: 140px;
@@ -1395,7 +3410,6 @@ ul, ol {
 
     .cajaoverflow {
     grid-area: main;
-    background-color: white;
     justify-self: left;
     align-self: flex-start;
     width: 360px;
@@ -1411,24 +3425,21 @@ ul, ol {
 .iconosfi_preguntasfrecuentes {
     grid-area: main;
     justify-self: left;
-    background-color: white;
-    padding-top: 900px;
+    padding-top: 950px;
   }
 
 .logoiba_preguntasfrecuentes {
     grid-area: logo;
-    background-color: white;
 }
 
 .footer_preguntasfrecuentes {
     grid-area: footer;
-    background-color: white;
     justify-self: center;
-}
+ }
 
 .piepagina_preguntasfrecuentes {
     grid-area: ayuda;
-    background-color: white;
+    padding-top: 95px;
 }
 
 }
@@ -1437,7 +3448,6 @@ ul, ol {
 @media screen and  (max-width: 500px)
 {
 .contenedor_disponibilidadproductos {
-    background-color: white;
     grid-template-columns: 300px;
     grid-template-rows: 70px 150px 150px 170px 350px 90px 90px 130px 20px;
     grid-template-areas: 
@@ -1454,14 +3464,11 @@ ul, ol {
 
 .logogummi_disponibilidadproductos {
     grid-area: header;
-    background-color: white;
     position: fixed;
 }
 
 .box_disponibilidadproductos {
     grid-area: header;
-    background-color: white;
-
 }
 
 .nav_disponibilidadproductos {
@@ -1472,7 +3479,6 @@ ul, ol {
 
 .preguntas {
     grid-area: main;
-    background-color:white;
     position:relative;
     align-self: center;
     bottom: 140px;
@@ -1481,7 +3487,6 @@ ul, ol {
 
 .cajaoverflow {
     grid-area: main;
-    background-color: white;
     justify-self: left;
     align-self: flex-start;
     width: 360px;
@@ -1497,24 +3502,20 @@ ul, ol {
 .iconosfi_disponibilidadproductos {
     grid-area: main;
     justify-self: left;
-    background-color: white;
-    padding-top: 900px;
+    padding-top: 750px;
   }
 
 .logoiba_disponibilidadproductos {
     grid-area: logo;
-    background-color: white;
 }
 
 .footer_disponibilidadproductos {
     grid-area: footer;
-    background-color: white;
     justify-self: center;
 }
 
 .piepagina_disponibilidadproductos {
     grid-area: ayuda;
-    background-color: white;
 }
 
 }
@@ -1523,7 +3524,6 @@ ul, ol {
 @media screen and  (max-width: 500px)
 {
 .contenedor_envios {
-    background-color: white;
     grid-template-columns: 300px;
     grid-template-rows: 70px 150px 150px 170px 350px 90px 90px 130px 20px;
     grid-template-areas: 
@@ -1540,14 +3540,11 @@ ul, ol {
 
 .logogummi_envios {
     grid-area: header;
-    background-color: white;
     position: fixed;
 }
 
 .box_envios {
     grid-area: header;
-    background-color: white;
-
 }
 
 .nav_envios {
@@ -1558,7 +3555,6 @@ ul, ol {
 
 .preguntas {
     grid-area: main;
-    background-color:white;
     position:relative;
     align-self: center;
     bottom: 140px;
@@ -1567,7 +3563,6 @@ ul, ol {
 
 .cajaoverflow {
     grid-area: main;
-    background-color: white;
     justify-self: left;
     align-self: flex-start;
     width: 360px;
@@ -1583,24 +3578,20 @@ ul, ol {
 .iconosfi_envios {
     grid-area: main;
     justify-self: left;
-    background-color: white;
-    padding-top: 900px;
+    padding-top: 750px;
   }
 
 .logoiba_envios {
     grid-area: logo;
-    background-color: white;
 }
 
 .footer_envios {
     grid-area: footer;
-    background-color: white;
     justify-self: center;
 }
 
 .piepagina_envios {
     grid-area: ayuda;
-    background-color: white;
 }
 
 }
@@ -1609,7 +3600,6 @@ ul, ol {
 @media screen and  (max-width: 500px)
 {
 .contenedor_pago {
-    background-color: white;
     grid-template-columns: 300px;
     grid-template-rows: 70px 150px 150px 170px 350px 90px 90px 130px 20px;
     grid-template-areas: 
@@ -1626,14 +3616,11 @@ ul, ol {
 
 .logogummi_pago {
     grid-area: header;
-    background-color: white;
     position: fixed;
 }
 
 .box_pago {
     grid-area: header;
-    background-color: white;
-
 }
 
 .nav_pago {
@@ -1644,7 +3631,6 @@ ul, ol {
 
 .preguntas {
     grid-area: main;
-    background-color:white;
     position:relative;
     align-self: center;
     bottom: 140px;
@@ -1653,7 +3639,6 @@ ul, ol {
 
 .cajaoverflow {
     grid-area: main;
-    background-color: white;
     justify-self: left;
     align-self: flex-start;
     width: 360px;
@@ -1669,24 +3654,20 @@ ul, ol {
 .iconosfi_pago {
     grid-area: main;
     justify-self: left;
-    background-color: white;
-    padding-top: 900px;
+    padding-top: 750px;
   }
 
 .logoiba_pago {
     grid-area: logo;
-    background-color: white;
 }
 
 .footer_pago {
     grid-area: footer;
-    background-color: white;
     justify-self: center;
 }
 
 .piepagina_pago {
     grid-area: ayuda;
-    background-color: white;
 }
 
 }
@@ -1695,7 +3676,6 @@ ul, ol {
 @media screen and  (max-width: 500px)
 {
 .contenedor_index {
-    background-color: white;
     grid-template-columns: 400px;
     grid-template-rows: 70px 150px 100px 360px 100px 130px 20px;
     grid-template-areas: 
@@ -1710,33 +3690,28 @@ ul, ol {
 
 .logogummi {
     grid-area: header;
-    background-color: white;
     position: fixed;
 }
 
 .box {
     grid-area: header;
-    background-color: white;
 
 }
 
 .nav {
     grid-area: main;
     height: 80px;
-    background-color: white
  }
 
 .slider {
     grid-area: main;
     padding-top: 180px;
-    background-color: white;
   }
 
 .iconosfi {
     grid-area: main;
-    padding-top: 600px;
+    padding-top: 650px;
     justify-self: left;
-    background-color: white;
   }
 
 ul, ol {
@@ -1746,18 +3721,19 @@ ul, ol {
  
 .logoiba {
     grid-area: logo;
-    background-color: white;
+
 }
 
 .footer {
     grid-area: footer;
-    background-color: white;
     justify-self: center;
+    padding-top: 60px;
 }
 
 .piepagina {
     grid-area: ayuda;
-    background-color: white;
+    padding-top: 70px;
+    position: relative;
 }
 
  }
@@ -1767,9 +3743,8 @@ ul, ol {
 @media screen and  (max-width: 500px)
 {
 .contenedor_contacto {
-    background-color: white;
     grid-template-columns: 340px;
-    grid-template-rows: 70px 150px 100px 360px 90px 100px 130px 20px;
+    grid-template-rows: 70px 150px 100px 240px 90px 100px 130px 20px;
     grid-template-areas: 
     "header"
     "main"
@@ -1783,42 +3758,35 @@ ul, ol {
 
 .logogummi_contacto {
     grid-area: header;
-    background-color: white;
     position: fixed;
 }
 
 .box_contacto {
     grid-area: header;
-    background-color: white;
-
 }
 
 .nav_contacto {
     grid-area: main;
     height: 80px;
-    background-color: white
- }
+}
 
 
 .contactogummi {
     grid-area: main;
     padding-top: 180px;
     position: relative;
-    background-color:white
-  }
+ }
 
   .contactogummi_formas {
     grid-area: formas;
     position: relative;
-    padding-bottom: 90px;
    }
 
 
 .iconosfi_contacto {
     grid-area: main;
-    padding-top: 700px;
+    padding-top: 650px;
     justify-self: left;
-    background-color: white;
   }
 
 ul, ol {
@@ -1828,23 +3796,25 @@ ul, ol {
  
 .logoiba_contacto {
     grid-area: logo;
-    background-color: white;
+    padding-top: 40px;
 }
 
 .footer_contacto {
     grid-area: footer;
-    background-color: white;
     justify-self: center;
+    padding-top: 60px;
 }
 
 .piepagina_contacto {
     grid-area: ayuda;
-    background-color: white;
+    padding-top: 90px;
+    position: relative;
 }
 
 }
 
-/*
+/*Configuraciones generales*/
+
 .contacto__formulario--titulo {
     color: darkgray;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1869,19 +3839,6 @@ ul, ol {
     text-align: left;
     font-size: small; 
     margin-bottom: 200px;
-}
-
-.marcaprincipal {
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: x-large;
-    margin-top: 20px;
-    margin-bottom: 40px;
-
-}
-
-.marca__subtitulo {
-    margin-top: 20px;
 }
 
 .login {
