@@ -2988,7 +2988,6 @@ ul, ol {
 
 .logogummi {
     grid-area: logo;
-    background-color: white;
     margin-top: 13px;
 }
 
@@ -3026,7 +3025,6 @@ ul, ol {
 
 .piepagina {
     grid-area: tabla;
-    background-color: white;
     align-items: right;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: grey;
@@ -3060,9 +3058,8 @@ ul, ol {
 
 .logoiba {
     grid-area: iba;
-    background-color: white;
     justify-self: left;
-}
+ }
 
 .footer {
     grid-area: footer;
@@ -3215,7 +3212,6 @@ ul, ol {
 
 .banner {
     grid-area: promo;
-        background-color: white;
 }
 
 .slider {
@@ -3794,6 +3790,7 @@ ul, ol {
 .logoiba_contacto {
     grid-area: logo;
     padding-top: 40px;
+    transform: translate(200px, 138px);
 }
 
 .footer_contacto {
@@ -3813,21 +3810,23 @@ ul, ol {
 /*Configuraciones generales*/
 
 .contacto__formulario--titulo {
-    color: darkgray;
+    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
     font-size: small;
     margin-top: 5px;
     margin-bottom: 5px;
+    background-image: linear-gradient(to right, #eecd60, black);
 }
 
 .contacto__formas--titulo {
-    color: darkgray;
+    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
     font-size: small;
     margin-top: 10px;
     margin-bottom: 10px;
+    background-image: linear-gradient(to right, #eecd60, black);    
 }
 
 .contacto__formas--otras {
