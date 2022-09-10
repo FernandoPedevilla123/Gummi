@@ -1,5 +1,5 @@
 /*envios versión Laptop*/
-@media screen and  (max-width: 1280px)
+@media screen and  (max-width: 1366px)
 {
 .contenedor_envios {
     display: grid;
@@ -171,7 +171,7 @@ ul, ol {
 }
 
 }/*envios versión Laptop*/
-@media screen and  (max-width: 1280px)
+@media screen and  (max-width: 1366px)
 {
 .contenedor_envios {
     display: grid;
@@ -344,7 +344,7 @@ ul, ol {
 
 /*login.html versión Laptop*/
 
-@media screen and  (max-width: 1280px)
+@media screen and  (max-width: 1366px)
 {
 .contenedor_login {
     display: grid;
@@ -1091,7 +1091,7 @@ ul, ol {
 }
 
 }/*pago versión Laptop*/
-@media screen and  (max-width: 1280px)
+@media screen and  (max-width: 1366px)
 {
 .contenedor_pago {
     display: grid;
@@ -1437,7 +1437,7 @@ ul, ol {
 }
 
 /*envios versión Laptop*/
-@media screen and  (max-width: 1280px)
+@media screen and  (max-width: 1366px)
 {
 .contenedor_envios {
     display: grid;
@@ -1791,7 +1791,7 @@ ul, ol {
 /*preguntasfrecuentes versión Laptop*/
 
 
-@media screen and  (max-width: 1280px)
+@media screen and  (max-width: 1366px)
 {
 .contenedor_preguntasfrecuentes {
     display: grid;
@@ -2143,7 +2143,7 @@ ul, ol {
 /*disponibilidadproductos versión Laptop*/
 
 
-@media screen and  (max-width: 1280px)
+@media screen and  (max-width: 1366px)
 {
 .contenedor_disponibilidadproductos {
     display: grid;
@@ -2481,7 +2481,7 @@ ul, ol {
 
 /*contacto.html versión Laptop*/
 
-@media screen and  (max-width: 1280px)
+@media screen and  (max-width: 1366px)
 {
 .contenedor_contacto {
     display: grid;
@@ -2806,7 +2806,7 @@ ul, ol {
 
 /*marca.html versión Laptop*/
 
-@media screen and  (max-width: 1280px)
+@media screen and  (max-width: 1366px)
 {
 .contenedor_marca {
     display: grid;
@@ -3165,7 +3165,7 @@ ul, ol {
 
 /*index.html versión Laptop*/
 
-@media screen and  (max-width: 1280px)
+@media screen and  (max-width: 1366px)
 {
 .contenedor_index {
     display: grid;
