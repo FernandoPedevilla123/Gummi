@@ -1,5 +1,21 @@
+.bg-lav {
+    background-color: #ebeae6;
+}
+
+.btn-primary {
+   background-color: black;
+   border-color: black;
+}
+
+.btn-outline-success
+{
+   background-color: black;
+   border-color: black;
+}
+  
+
 /*envios versión Laptop*/
-@media screen and  (max-width: 1366px)
+@media screen and  (min-width: 769px)
 {
 .contenedor_envios {
     display: grid;
@@ -171,7 +187,7 @@ ul, ol {
 }
 
 }/*envios versión Laptop*/
-@media screen and  (max-width: 1366px)
+@media screen and  (min-width: 769px)
 {
 .contenedor_envios {
     display: grid;
@@ -344,7 +360,7 @@ ul, ol {
 
 /*login.html versión Laptop*/
 
-@media screen and  (max-width: 1366px)
+@media screen and  (min-width: 769px)
 {
 .contenedor_login {
     display: grid;
@@ -501,7 +517,7 @@ ul, ol {
 }
 
 /*login versión iPad*/
-@media screen and  (max-width: 1024px)
+@media screen and  (max-width: 768px)
 {
 .contenedor_login {
     display: grid;
@@ -636,7 +652,7 @@ ul, ol {
 }
 
 /*login.html versión iPhone X*/
-@media screen and  (max-width: 500px)
+@media screen and  (max-width: 480px)
 {
 .contenedor_login {
     grid-template-columns: 300px;
@@ -780,7 +796,7 @@ ul, ol {
 }
 
 /*marca.html versión iPhone X*/
-@media screen and  (max-width: 500px)
+@media screen and  (max-width: 480px)
 {
 .contenedor_marca {
     grid-template-columns: 400px;
@@ -922,7 +938,7 @@ ul, ol {
 }
 
 /*pago versión iPad*/
-@media screen and  (max-width: 1024px)
+@media screen and  (max-width: 768px)
 {
 .contenedor_pago {
     display: grid;
@@ -1091,7 +1107,7 @@ ul, ol {
 }
 
 }/*pago versión Laptop*/
-@media screen and  (max-width: 1366px)
+@media screen and  (min-width: 769px)
 {
 .contenedor_pago {
     display: grid;
@@ -1263,7 +1279,7 @@ ul, ol {
 
 
 /*envios versión iPad*/
-@media screen and  (max-width: 1024px)
+@media screen and  (max-width: 768px)
 {
 .contenedor_envios {
     display: grid;
@@ -1437,7 +1453,7 @@ ul, ol {
 }
 
 /*envios versión Laptop*/
-@media screen and  (max-width: 1366px)
+@media screen and  (min-width: 769px)
 {
 .contenedor_envios {
     display: grid;
@@ -1613,7 +1629,7 @@ ul, ol {
 /*preguntasfrecuentes versión iPad*/
 
 
-@media screen and  (max-width: 1024px)
+@media screen and  (max-width: 768px)
 {
 .contenedor_preguntasfrecuentes {
     display: grid;
@@ -1791,7 +1807,7 @@ ul, ol {
 /*preguntasfrecuentes versión Laptop*/
 
 
-@media screen and  (max-width: 1366px)
+@media screen and  (min-width: 769px)
 {
 .contenedor_preguntasfrecuentes {
     display: grid;
@@ -1967,7 +1983,7 @@ ul, ol {
 /*disponibilidadproductos versión iPad*/
 
 
-@media screen and  (max-width: 1024px)
+@media screen and  (max-width: 768px)
 {
 .contenedor_disponibilidadproductos {
     display: grid;
@@ -2143,7 +2159,7 @@ ul, ol {
 /*disponibilidadproductos versión Laptop*/
 
 
-@media screen and  (max-width: 1366px)
+@media screen and  (min-width: 769px)
 {
 .contenedor_disponibilidadproductos {
     display: grid;
@@ -2318,7 +2334,7 @@ ul, ol {
 
 /*contacto.html versión iPad*/
 
-@media screen and  (max-width: 1024px)
+@media screen and  (max-width: 768px)
 {
 .contenedor_contacto {
     display: grid;
@@ -2335,6 +2351,7 @@ ul, ol {
 
 .logogummi_contacto {
     grid-area: logo;
+    position: fixed;
     margin-top: 13px;
 }
 
@@ -2352,6 +2369,14 @@ ul, ol {
     top:20px;
     right: 10px;
 }
+
+.linea1 {
+    grid-area: header;
+    position: fixed;
+    width: 768px;
+    background-color: black;
+    background-image: linear-gradient(to right, #eecd60, black);
+   }
 
 .flexcaja_contacto {
     flex-wrap: wrap;
@@ -2428,7 +2453,7 @@ ul, ol {
  }
  
  .nav_contacto li a:hover {
-    background-color:#eecd60;
+    background-color:#cfa828;
  }
  
  .nav_contacto li ul {
@@ -2481,7 +2506,7 @@ ul, ol {
 
 /*contacto.html versión Laptop*/
 
-@media screen and  (max-width: 1366px)
+@media screen and  (min-width: 769px)
 {
 .contenedor_contacto {
     display: grid;
@@ -2499,14 +2524,16 @@ ul, ol {
 .logogummi_contacto {
     grid-area: logo;
     margin-top: 13px;
+    position: fixed;
 }
 
 .nav_contacto {
     grid-area: menu;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     z-index: 1;
-    align-self:unset;
-          
+    align-self:unset;     
+    position: fixed;
+    padding-left: 500px;
 }
 
 .box_contacto {
@@ -2520,6 +2547,14 @@ ul, ol {
     flex-wrap: wrap;
 
 }
+
+.linea1 {
+    grid-area: header;
+    position: fixed;
+    width: 1332px;
+    background-color: black;
+    background-image: linear-gradient(to right, #eecd60, black);
+   }
 
 .contactogummi {
     grid-area: formulario;
@@ -2640,10 +2675,12 @@ ul, ol {
     margin-top: 20px;
 }
 
+
+
 }
 
 /*marca.html versión iPad*/
-@media screen and  (max-width: 1024px)
+@media screen and  (max-width: 768px)
 {
 .contenedor_marca {
     display: grid;
@@ -2806,7 +2843,7 @@ ul, ol {
 
 /*marca.html versión Laptop*/
 
-@media screen and  (max-width: 1366px)
+@media screen and  (min-width: 769px)
 {
 .contenedor_marca {
     display: grid;
@@ -2969,13 +3006,12 @@ ul, ol {
 
 /*index.html versión iPad*/
 
-@media screen and  (max-width: 1024px)
+@media screen and  (max-width: 768px)
 {
 .contenedor_index {
     display: grid;
     justify-content:space-between;
     justify-items: stretch;
-    background-color: white;
     grid-template-columns: 120px 400px 200px;
     grid-template-rows: 70px 280px 450px 150px 30px;
     grid-template-areas: 
@@ -2989,11 +3025,11 @@ ul, ol {
 .logogummi {
     grid-area: logo;
     margin-top: 13px;
+    position: fixed;
 }
 
 .nav {
     grid-area: menu;
-    background-color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     z-index: 1;
     align-self:unset;
@@ -3002,7 +3038,6 @@ ul, ol {
 
 .box {
     grid-area: iconos;
-    background-color: white;
     position: fixed;
     top:20px;
     right: 10px;
@@ -3015,12 +3050,11 @@ ul, ol {
 
 .banner {
     grid-area: promo;
-    background-color: white;
+    display: none;
 }
 
 .slider {
     grid-area: carrusel;
-    background-color:white;
 }
 
 .piepagina {
@@ -3035,7 +3069,6 @@ ul, ol {
 
 .iconosfi {
     grid-area: fi;
-    background-color: white;
     justify-self: right;
 }
 
@@ -3063,7 +3096,6 @@ ul, ol {
 
 .footer {
     grid-area: footer;
-    background-color: white;
     justify-self: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -3144,7 +3176,7 @@ ul, ol {
     100% {opacity: 100%;}    
  }
 
- .slider-container {
+ /*.slider-container {
     animation-name: aparecer;
     animation-duration: 2s;
     animation-delay: 2s;
@@ -3165,13 +3197,12 @@ ul, ol {
 
 /*index.html versión Laptop*/
 
-@media screen and  (max-width: 1366px)
+@media screen and  (min-width: 769px)
 {
 .contenedor_index {
     display: grid;
     justify-content:space-between;
     justify-items: stretch;
-    background-color: white;
     grid-template-columns: 120px 400px 200px;
     grid-template-rows: 70px 280px 450px 150px 30px;
     grid-template-areas: 
@@ -3184,22 +3215,23 @@ ul, ol {
 
 .logogummi {
     grid-area: logo;
-    background-color: white;
     margin-top: 13px;
+    background-size: 768px;
+    position: fixed;
 }
 
 .nav {
     grid-area: menu;
-    background-color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     z-index: 1;
     align-self:unset;
+    position: fixed;
+    padding-left: 420px;
           
 }
 
 .box {
     grid-area: iconos;
-    background-color: white;
     position: fixed;
     top:20px;
     right: 10px;
@@ -3212,32 +3244,42 @@ ul, ol {
 
 .banner {
     grid-area: promo;
+    position:static;
 }
 
 .slider {
     grid-area: carrusel;
-    background-color:white;
+    position:static;
+    padding-top: 200px;
 }
+
+.linea1 {
+    grid-area: menu;
+    position: fixed;
+    width: 1332px;
+    background-color: black;
+    background-image: linear-gradient(to right, #eecd60, black);
+   }
 
 .piepagina {
     grid-area: tabla;
-    background-color: white;
     align-items: right;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: grey;
     font-size: small;
     display:inline-block;
     align-self:stretch;
+    padding-top: 250px;
 }
 
 .iconosfi {
     grid-area: fi;
-    background-color: white;
     justify-self: right;
 }
 
 .suscripcion {
     display:inline-block;
+    padding-top: 180px;
  }
 
 .suscripcion__boton--label {
@@ -3255,15 +3297,14 @@ ul, ol {
 
 .logoiba {
     grid-area: iba;
-    background-color: white;
     justify-self: left;
 }
 
 .footer {
     grid-area: footer;
-    background-color: white;
     justify-self: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 120px;
 }
 
 ul, ol {
@@ -3318,7 +3359,7 @@ ul, ol {
 
 .fieldsetmen {
     color: black;
-    background-color: #eecd60;
+    background-color:#eecd60;
     width: 1500px;
     height: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -3362,7 +3403,7 @@ ul, ol {
 }
 
 /*preguntasfrecuentes.html versión iPhone X*/
-@media screen and  (max-width: 500px)
+@media screen and  (max-width: 480px)
 {
 .contenedor_preguntasfrecuentes {
     grid-template-columns: 300px;
@@ -3438,7 +3479,7 @@ ul, ol {
 }
 
 /*disponibilidaddeproductos.html versión iPhone X*/
-@media screen and  (max-width: 500px)
+@media screen and  (max-width: 480px)
 {
 .contenedor_disponibilidadproductos {
     grid-template-columns: 300px;
@@ -3514,7 +3555,7 @@ ul, ol {
 }
 
 /*envios.html versión iPhone X*/
-@media screen and  (max-width: 500px)
+@media screen and  (max-width: 480px)
 {
 .contenedor_envios {
     grid-template-columns: 300px;
@@ -3590,7 +3631,7 @@ ul, ol {
 }
 
 /*formasdepago.html versión iPhone X*/
-@media screen and  (max-width: 500px)
+@media screen and  (max-width: 480px)
 {
 .contenedor_pago {
     grid-template-columns: 300px;
@@ -3666,7 +3707,7 @@ ul, ol {
 }
 
 /*index.html versión iPhone X*/
-@media screen and  (max-width: 500px)
+@media screen and  (max-width: 480px)
 {
 .contenedor_index {
     grid-template-columns: 400px;
@@ -3733,7 +3774,7 @@ ul, ol {
 
  
 /*contacto.html versión iPhone X*/
-@media screen and  (max-width: 500px)
+@media screen and  (max-width: 480px)
 {
 .contenedor_contacto {
     grid-template-columns: 340px;
@@ -3763,6 +3804,13 @@ ul, ol {
     height: 80px;
 }
 
+.linea1 {
+    grid-area: header;
+    position: fixed;
+    width: 480px;
+    background-color: black;
+    background-image: linear-gradient(to right, #eecd60, black);
+   }
 
 .contactogummi {
     grid-area: main;
@@ -3774,7 +3822,6 @@ ul, ol {
     grid-area: formas;
     position: relative;
    }
-
 
 .iconosfi_contacto {
     grid-area: main;
@@ -3816,7 +3863,7 @@ ul, ol {
     font-size: small;
     margin-top: 5px;
     margin-bottom: 5px;
-    background-image: linear-gradient(to right, #eecd60, black);
+
 }
 
 .contacto__formas--titulo {
@@ -3826,7 +3873,7 @@ ul, ol {
     font-size: small;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-image: linear-gradient(to right, #eecd60, black);    
+  
 }
 
 .contacto__formas--otras {
@@ -3883,4 +3930,13 @@ ul, ol {
 #destacados {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align:center;
+}
+/*
+body {
+    background-image: url("../assets/fondo.JPG");
+    background-blend-mode:color-dodge;
+    background-repeat:round;
+    background-attachment: fixed;
+    background-size: cover;
+    }*/
 }
